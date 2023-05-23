@@ -1,0 +1,689 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+    text-decoration: none;
+
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #03EDFF;
+    border-radius: 5px;
+
+}
+
+
+body {
+    background-color: #20232F;
+    align-items: center;
+    height: 100vh;
+}
+
+header {
+    position: fixed;
+    width: 100%;
+    background-color: #20232F;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    z-index: 100;
+}
+
+header h1 {
+    color: white;
+}
+
+nav {
+    display: flex;
+    gap: 45px;
+}
+
+nav a {
+    padding: 10px;
+    color: white;
+    font-weight: 400;
+    font-size: 18px;
+    border-bottom: 2px solid transparent;
+    transition: .4s;
+}
+
+nav a:hover {
+    color: #03EDFF;
+    border-bottom: 2px solid #03EDFF;
+}
+
+.link-color {
+    color: #03EDFF;
+}
+
+.mobile-menu {
+    display: none;
+}
+
+main {
+    padding-top: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 950px;
+}
+
+
+.text h1 {
+    color: white;
+    font-size: 64px;
+}
+
+.text h3 {
+    width: 16ch;
+    font-size: 45px;
+    color: #03EDFF;
+    border-right: 4px solid #03EDFF;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: h3Typing 2s steps(16), blinking 0.8s infinite alternate;
+}
+
+@keyframes h3Typing {
+    from {
+        width: 0;
+    }
+}
+
+@keyframes blinking {
+    50% {
+        border-color: transparent;
+    }
+}
+
+.text p {
+    color: white;
+    font-weight: 300;
+    font-size: 25px;
+    padding-bottom: 45px;
+
+}
+
+span {
+    color: #03EDFF;
+}
+
+.icons {
+    display: flex;
+    align-items: center;
+    gap: 55px;
+}
+
+i {
+    font-size: 35px;
+    color: #03EDFF;
+    border-radius: 30%;
+    transition: .4s;
+    cursor: pointer;
+}
+
+.icons a {
+    transition: .4s;
+}
+
+i:hover {
+    scale: 1.3;
+}
+
+.icons a:hover {
+    scale: 1.3;
+}
+
+.email {
+    display: none;
+    font-size: 20px;
+}
+
+.showemail {
+    display: block;
+}
+
+
+img {
+    width: 600px;
+}
+
+#about {
+    background-color: #323744;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 950px;
+}
+
+
+#about h3 {
+    font-size: 50px;
+    color: white;
+}
+
+#about h4 {
+    font-size: 30px;
+    color: white;
+    padding-bottom: 10px;
+}
+
+#about p {
+    font-size: 18px;
+    color: white;
+}
+
+#skills {
+    height: 950px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#skills h2 {
+    text-align: center;
+    font-size: 45px;
+    color: white;
+    padding-bottom: 45px;
+}
+
+.card-area {
+    display: flex;
+    justify-content: space-around;
+}
+
+#card {
+    width: 350px;
+    height: 380px;
+    background-color: #323744;
+    border-radius: 15px;
+    border: 2px solid transparent;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: justify;
+    padding: 20px;
+    transition: .4s;
+}
+
+#card:hover {
+    scale: 1.1;
+    border-color: #03EDFF;
+}
+
+#card i {
+    font-size: 55px;
+}
+
+#card h3 {
+    font-size: 30px;
+    color: white;
+    padding-bottom: 25px;
+}
+
+#card p {
+    color: white;
+    margin-bottom: 45px;
+}
+
+.btn-card {
+    width: 100px;
+    height: 40px;
+    border: none;
+    box-shadow: 1px 1px 10px #03EDFF;
+    background-color: #03EDFF;
+    font-size: 15px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    border-radius: 50px;
+    transition: .4s;
+    cursor: pointer;
+}
+
+.btn-card:hover {
+    box-shadow: none;
+}
+
+#projects {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 1250px;
+    background-color: #323744;
+}
+
+#projects h2 {
+    color: #03EDFF;
+    font-size: 45px;
+    padding-bottom: 45px;
+    text-align: center;
+}
+
+.cards-projects {
+    display: flex;
+    justify-content: space-around;
+}
+
+
+.proj {
+    width: 400px;
+    background-color: #20232F;
+    padding: 25px;
+    border-radius: 20px;
+    transition: .4s;
+    border: 2px solid transparent;
+}
+
+.proj:hover {
+    scale: 1.1;
+    border-color: #03EDFF;
+}
+
+.cards-projects img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.cards-projects p {
+    margin-top: 25px;
+    font-size: 18px;
+    color: white;
+}
+
+.btn-projects {
+    display: flex;
+    justify-content: center;
+}
+
+.btn-projects button {
+    width: 120px;
+    margin-top: 20px;
+    height: 40px;
+    border-radius: 30px;
+    border: none;
+    margin-right: 20px;
+    background-color: #03EDFF;
+    font-size: 15px;
+    font-weight: 500;
+    box-shadow: 1px 1px 10px #03EDFF;
+    transition: .4s;
+    cursor: pointer;
+}
+
+.btn-projects button:hover {
+    box-shadow: none;
+}
+
+.projects-breve {
+    padding-top: 45px;
+    display: none;
+}
+
+.em-breve {
+    width: 400px;
+    height: 380px;
+    padding: 45px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #20232F;
+    margin: 0 auto;
+    border-radius: 20px;
+    border: 2px solid transparent;
+    transition: .4s;
+}
+
+.em-breve h3 {
+    font-size: 40px;
+    color: white;
+}
+
+
+.em-breve img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.em-breve p {
+    margin-top: 25px;
+    font-size: 18px;
+    color: white;
+}
+
+.btn-projects-breve {
+    display: flex;
+}
+
+.btn-projects-breve a button {
+    width: 150px;
+    transition: .4s;
+}
+
+.btn-projects-breve a button {
+    width: 120px;
+    margin-top: 20px;
+    height: 40px;
+    border-radius: 30px;
+    border: none;
+    margin-right: 20px;
+    background-color: #03EDFF;
+    font-size: 15px;
+    font-weight: 500;
+    box-shadow: 1px 1px 10px #03EDFF;
+    transition: .4s;
+    cursor: pointer;
+}
+
+
+.btn-projects-breve a button:hover {
+    box-shadow: none;
+    background-color: #03EDFF;
+    color: black;
+
+}
+
+.em-breve:hover {
+    scale: 1.1;
+    border-color: #03EDFF;
+}
+
+.read-more {
+    display: flex;
+    justify-content: center;
+}
+
+.read-more button {
+    width: 250px;
+    margin-top: 60px;
+    height: 40px;
+    border-radius: 30px;
+    border: none;
+    margin-right: 20px;
+    background-color: #03EDFF;
+    font-size: 15px;
+    font-weight: 500;
+    box-shadow: 1px 1px 10px #03EDFF;
+    transition: .4s;
+    cursor: pointer;
+}
+
+.read-more button:hover {
+    background-color: transparent;
+    color: white;
+}
+
+.back-to-start {
+    display: flex;
+    justify-content: flex-end;
+    padding: 20px;
+}
+
+.back-to-start i {
+    font-size: 60px;
+}
+
+.back-to-start a {
+    transition: .4s;
+}
+
+.back-to-start a:hover {
+    scale: 1.2;
+}
+
+.active-projects {
+    display: flex;
+}
+
+@media only screen and (max-width: 1413px) {
+    .img {
+        display: none;
+    }
+
+    .image img {
+        display: none;
+    }
+
+    #projects {
+        height: 1300px;
+    }
+
+    .active-projects {
+        display: flex;
+    }
+}
+
+@media only screen and (max-width: 1265px) {
+
+    #skills {
+        height: 1350px;
+    }
+
+    #skills h2 {
+        font-size: 35px;
+    }
+
+    .card-area {
+        display: block;
+        margin: 0 auto;
+    }
+
+    #card {
+        margin-bottom: 15px;
+        width: 300px;
+        height: 350px;
+    }
+
+    #card p {
+        font-size: 14px;
+    }
+
+    #projects {
+        height: 2900px;
+    }
+
+
+    .cards-projects {
+        display: block;
+        margin: 0 auto;
+    }
+
+    .proj p {
+        font-size: 14px;
+        text-align: justify;
+    }
+
+    .proj {
+        margin-top: 15px;
+        margin-bottom: 15px;
+        width: 300px;
+        height: 400px;
+    }
+
+    .btn-projects {
+        gap: 35px;
+    }
+
+    .btn-projects button {
+        width: 90px;
+        font-size: 13px;
+    }
+
+    .projects-breve {
+        display: block;
+        margin: 0 auto;
+    }
+
+    .read-more {
+        display: none;
+    }
+
+    .active-projects {
+        display: block;
+
+    }
+
+    .em-breve {
+        width: 300px;
+        margin-bottom: 25px;
+    }
+
+
+    .em-breve p {
+        font-size: 14px;
+        text-align: justify;
+    }
+
+    .btn-projects-breve a button {
+        width: 90px;
+        font-size: 13px;
+    }
+
+
+    .read-more button {
+        width: 180px;
+    }
+
+    .back-to-start {
+        margin-top: 45px;
+        justify-content: center;
+    }
+
+    .back-to-start i {
+        font-size: 55px;
+    }
+
+}
+
+@media only screen and (max-width: 861px) {
+
+    body {
+        overflow-x: hidden;
+    }
+
+    header {
+        justify-content: space-between;
+        padding: 40px 40px;
+    }
+
+    nav {
+        position: absolute;
+        top: 12vh;
+        left: 0;
+        width: 70vw;
+        height: 92vh;
+        background-color: #323744;
+        border-radius: 10px;
+        align-items: center;
+        justify-content: space-around;
+        flex-direction: column;
+        transition: .4s;
+        transform: translateX(-70vw);
+    }
+
+    .active {
+        transform: translateX(0);
+        transition: .4s;
+    }
+
+    .mobile-menu {
+        display: block;
+    }
+
+    .mobile-menu i {
+        font-size: 35px;
+    }
+
+
+    #inicio h1 {
+        font-size: 45px;
+    }
+
+    #inicio h3 {
+        font-size: 30px;
+    }
+
+    #inicio p {
+        font-size: 20px;
+    }
+
+    .text-about {
+        display: block;
+        margin: 0 auto;
+    }
+
+    .text-about p {
+        margin-top: 35px;
+        width: 350px;
+        text-align: justify;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    header h1 {
+        font-size: 25px;
+    }
+
+    #inicio {
+        justify-content: center;
+    }
+
+    #inicio h1 {
+        font-size: 25px;
+    }
+
+    #inicio h3 {
+        font-size: 18px;
+    }
+
+    #inicio p {
+        font-size: 16px;
+    }
+
+    .icons {
+        justify-content: center;
+    }
+
+    i {
+        font-size: 20px;
+    }
+
+    #about h3 {
+        font-size: 40px;
+    }
+
+    #about h4 {
+        font-size: 25px;
+    }
+
+
+    #about p {
+        font-size: 17px;
+    }
+
+}
+
+@media only screen and (max-width: 410px) {
+    #inicio {
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+
+    #about p {
+        width: 300px;
+    }
+}
