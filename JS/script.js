@@ -16,8 +16,6 @@ buttonShowProjects.addEventListener('click', () => {
     }
 
     buttonShowProjects.textContent = 'Ver Mais';
-
-
 });
 
 
