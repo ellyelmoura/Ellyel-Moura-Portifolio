@@ -4,9 +4,7 @@ const showProjects = document.querySelector('.projects-breve');
 const navList = document.getElementById('navList');
 const btnMenu = document.getElementById('btn-menu');
 
-const email = document.querySelector('.email');
-const showEmail = document.getElementById('email');
-
+const email = document.getElementById('email');
 
 
 
@@ -27,8 +25,12 @@ btnMenu.addEventListener('click', () => {
     navList.classList.toggle('active')
 });
 
-showEmail.addEventListener('click', () => {
-    email.classList.toggle('showemail')
+email.addEventListener('mouseover', () => {
+    email.textContent = "ellyel.dev@gmail.com"
+});
+
+email.addEventListener('mouseout', () => {
+    email.textContent = "Email"
 });
 
 
